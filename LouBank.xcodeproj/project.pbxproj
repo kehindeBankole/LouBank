@@ -14,6 +14,7 @@
 		7B1415F92C10EF450075D1C5 /* LouBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1415F82C10EF450075D1C5 /* LouBankTests.swift */; };
 		7B1416032C10EF450075D1C5 /* LouBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1416022C10EF450075D1C5 /* LouBankUITests.swift */; };
 		7B1416052C10EF450075D1C5 /* LouBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1416042C10EF450075D1C5 /* LouBankUITestsLaunchTests.swift */; };
+		7B377B902C1108FE00B48BB6 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B377B8F2C1108FE00B48BB6 /* Gradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		7B1415FE2C10EF450075D1C5 /* LouBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LouBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1416022C10EF450075D1C5 /* LouBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LouBankUITests.swift; sourceTree = "<group>"; };
 		7B1416042C10EF450075D1C5 /* LouBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LouBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B377B8F2C1108FE00B48BB6 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,9 @@
 		7B1415E52C10EF430075D1C5 /* LouBank */ = {
 			isa = PBXGroup;
 			children = (
+				7B377B8C2C1106E400B48BB6 /* Extensions */,
+				7B377B8B2C11067D00B48BB6 /* Design */,
+				7B377B8A2C11066D00B48BB6 /* Screens */,
 				7B1415E62C10EF430075D1C5 /* LouBankApp.swift */,
 				7B1415E82C10EF430075D1C5 /* ContentView.swift */,
 				7B1415EA2C10EF440075D1C5 /* Assets.xcassets */,
@@ -127,6 +132,28 @@
 				7B1416042C10EF450075D1C5 /* LouBankUITestsLaunchTests.swift */,
 			);
 			path = LouBankUITests;
+			sourceTree = "<group>";
+		};
+		7B377B8A2C11066D00B48BB6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7B377B8B2C11067D00B48BB6 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		7B377B8C2C1106E400B48BB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B377B8F2C1108FE00B48BB6 /* Gradient.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 			files = (
 				7B1415E92C10EF430075D1C5 /* ContentView.swift in Sources */,
 				7B1415E72C10EF430075D1C5 /* LouBankApp.swift in Sources */,
+				7B377B902C1108FE00B48BB6 /* Gradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
