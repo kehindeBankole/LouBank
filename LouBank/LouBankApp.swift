@@ -12,6 +12,8 @@ struct LouBankApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.font, .sansRegular())
+                .background(.appBackground)
         }
     }
 }

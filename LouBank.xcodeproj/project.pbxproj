@@ -15,6 +15,13 @@
 		7B1416032C10EF450075D1C5 /* LouBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1416022C10EF450075D1C5 /* LouBankUITests.swift */; };
 		7B1416052C10EF450075D1C5 /* LouBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1416042C10EF450075D1C5 /* LouBankUITestsLaunchTests.swift */; };
 		7B377B902C1108FE00B48BB6 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B377B8F2C1108FE00B48BB6 /* Gradient.swift */; };
+		7B67D5142C13AE420006852C /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B67D5132C13AE420006852C /* AppButton.swift */; };
+		7BF6356F2C14796B002AD569 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF6356E2C14796B002AD569 /* CustomButtonStyle.swift */; };
+		7BF635712C148146002AD569 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF635702C148146002AD569 /* Font.swift */; };
+		7BF635A12C14924C002AD569 /* SansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BF6359E2C14924C002AD569 /* SansRegular.ttf */; };
+		7BF635A22C14924C002AD569 /* SansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BF6359F2C14924C002AD569 /* SansBold.ttf */; };
+		7BF635A32C14924C002AD569 /* SansMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BF635A02C14924C002AD569 /* SansMedium.ttf */; };
+		7BF635A62C14CC20002AD569 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF635A52C14CC20002AD569 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,14 @@
 		7B1416022C10EF450075D1C5 /* LouBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LouBankUITests.swift; sourceTree = "<group>"; };
 		7B1416042C10EF450075D1C5 /* LouBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LouBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7B377B8F2C1108FE00B48BB6 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		7B377B912C11134D00B48BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7B67D5132C13AE420006852C /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		7BF6356E2C14796B002AD569 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		7BF635702C148146002AD569 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		7BF6359E2C14924C002AD569 /* SansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SansRegular.ttf; sourceTree = "<group>"; };
+		7BF6359F2C14924C002AD569 /* SansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SansBold.ttf; sourceTree = "<group>"; };
+		7BF635A02C14924C002AD569 /* SansMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SansMedium.ttf; sourceTree = "<group>"; };
+		7BF635A52C14CC20002AD569 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +112,9 @@
 		7B1415E52C10EF430075D1C5 /* LouBank */ = {
 			isa = PBXGroup;
 			children = (
+				7BF6359D2C14923C002AD569 /* Fonts */,
+				7B67D5122C13AE300006852C /* Components */,
+				7B377B912C11134D00B48BB6 /* Info.plist */,
 				7B377B8C2C1106E400B48BB6 /* Extensions */,
 				7B377B8B2C11067D00B48BB6 /* Design */,
 				7B377B8A2C11066D00B48BB6 /* Screens */,
@@ -137,6 +155,7 @@
 		7B377B8A2C11066D00B48BB6 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				7BF635A42C14CC0D002AD569 /* Login */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -144,6 +163,7 @@
 		7B377B8B2C11067D00B48BB6 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				7BF6356E2C14796B002AD569 /* CustomButtonStyle.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -152,8 +172,35 @@
 			isa = PBXGroup;
 			children = (
 				7B377B8F2C1108FE00B48BB6 /* Gradient.swift */,
+				7BF635702C148146002AD569 /* Font.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B67D5122C13AE300006852C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7B67D5132C13AE420006852C /* AppButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7BF6359D2C14923C002AD569 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7BF6359F2C14924C002AD569 /* SansBold.ttf */,
+				7BF635A02C14924C002AD569 /* SansMedium.ttf */,
+				7BF6359E2C14924C002AD569 /* SansRegular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7BF635A42C14CC0D002AD569 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7BF635A52C14CC20002AD569 /* Login.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +309,9 @@
 			files = (
 				7B1415EF2C10EF440075D1C5 /* Preview Assets.xcassets in Resources */,
 				7B1415EB2C10EF440075D1C5 /* Assets.xcassets in Resources */,
+				7BF635A22C14924C002AD569 /* SansBold.ttf in Resources */,
+				7BF635A32C14924C002AD569 /* SansMedium.ttf in Resources */,
+				7BF635A12C14924C002AD569 /* SansRegular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +336,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF635A62C14CC20002AD569 /* Login.swift in Sources */,
 				7B1415E92C10EF430075D1C5 /* ContentView.swift in Sources */,
 				7B1415E72C10EF430075D1C5 /* LouBankApp.swift in Sources */,
+				7BF635712C148146002AD569 /* Font.swift in Sources */,
 				7B377B902C1108FE00B48BB6 /* Gradient.swift in Sources */,
+				7BF6356F2C14796B002AD569 /* CustomButtonStyle.swift in Sources */,
+				7B67D5142C13AE420006852C /* AppButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +506,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LouBank/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -490,6 +545,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LouBank/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
