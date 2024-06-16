@@ -39,14 +39,14 @@ struct AppTabs: View {
                     Image(TabsDictionary[item.rawValue] ?? "")
                         .renderingMode(.template)
                         .font(.title)
-                        .foregroundStyle( currentTab == item.rawValue ? .red : .white)
+                        .foregroundStyle( currentTab == item.rawValue ? Color.accent : .white)
                 }
                 Spacer()
             }
         }
         .background(
             UnevenRoundedRectangle(cornerRadii: .init(topLeading: 25, topTrailing: 25))
-                .fill(.black)
+                .fill(Color.appBackground)
                 .padding(.top , -30)
                 .edgesIgnoringSafeArea(.all)
             
