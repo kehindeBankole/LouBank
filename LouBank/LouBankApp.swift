@@ -11,9 +11,8 @@ import SwiftUI
 struct LouBankApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+        ContentView()
                 .environment(\.font, .sansRegular())
-                .background(.appBackground)
         }
     }
 }

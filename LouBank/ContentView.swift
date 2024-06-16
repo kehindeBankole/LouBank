@@ -10,12 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-           Login()
+            ZStack(alignment: .topTrailing){
+                Rectangle().fill(LinearGradient.linearDark)
+                    .frame(maxWidth : .infinity)
+                    .frame(height: 150)
+                Login()
+            }
         }
-        .padding()
         .frame(maxHeight : .infinity)
         .frame(maxWidth : .infinity)
-        .background(.appBackground)
   
     }
 }
