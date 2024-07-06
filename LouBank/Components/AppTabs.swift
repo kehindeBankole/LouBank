@@ -27,39 +27,53 @@ struct AppTabs: View {
     @Binding var currentTab : String
     
     var body: some View {
-        HStack{
+        
+        
+        ZStack(alignment: .bottomLeading){
+            Image("tab-gradient")
+                .resizable()
+                .frame(height: 200)
+            HStack{
 
-            ForEach(TabsEnum.allCases , id:\.self){item in
-                Spacer()
-                Button(action: {
-                    withAnimation{
-                        currentTab = item.rawValue
+                ForEach(TabsEnum.allCases , id:\.self){item in
+                    Spacer()
+                    Button(action: {
+                        withAnimation{
+                            currentTab = item.rawValue
+                        }
+                    }){
+                        Image(TabsDictionary[item.rawValue] ?? "")
+                            .renderingMode(.template)
+                            .font(.title)
+                            .foregroundStyle( currentTab == item.rawValue ? Color.accent : .white)
                     }
-                }){
-                    Image(TabsDictionary[item.rawValue] ?? "")
-                        .renderingMode(.template)
-                        .font(.title)
-                        .foregroundStyle( currentTab == item.rawValue ? Color.accent : .white)
+                    Spacer()
                 }
-                Spacer()
-            }
-        }
-        .background(
-            UnevenRoundedRectangle(cornerRadii: .init(topLeading: 25, topTrailing: 25))
-                .fill(Color.appBackground)
-                .padding(.top , -30)
-                .edgesIgnoringSafeArea(.all)
-            
-            
-        )
+            } .background(
+                UnevenRoundedRectangle(cornerRadii: .init(topLeading: 25, topTrailing: 25))
+                    .fill(Color.appBackground)
+                    .padding(.top , -30)
+                    .edgesIgnoringSafeArea(.all)
+                
+                
+            )
+        
+     
+        }.background(.appBackground)
+//        .background(
+//            UnevenRoundedRectangle(cornerRadii: .init(topLeading: 25, topTrailing: 25))
+//                .fill(Color.appBackground)
+//                .padding(.top , -30)
+//                .edgesIgnoringSafeArea(.all)
+//            
+//            
+//        )
         .edgesIgnoringSafeArea(.all)
+        
         
     }
 }
 
 #Preview {
-    VStack{
-        Spacer()
-        //AppTabs(currentTab: Binding(.constant(.home)))
-    }
+    AppTabs(currentTab: .constant("home"))
 }

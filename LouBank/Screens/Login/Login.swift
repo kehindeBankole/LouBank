@@ -67,9 +67,9 @@ struct Login: View {
                                 .font(.sansMedium(size: 18))
                                 .foregroundStyle(.white)
                             HStack(spacing:10){
-                                ForEach(enteredValue , id:\.self){ item in
-                                    if(item != ""){
-                                        Text("\(item)")
+                                ForEach(enteredValue.indices , id: \.self){ index in
+                                    if(enteredValue[index] != ""){
+                                        Text("\(enteredValue[index])")
                                             .foregroundStyle(.white)
                                             .font(.sansMedium(size: 18))
                                             .frame(width: 20 , height: 20)

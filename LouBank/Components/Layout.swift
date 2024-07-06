@@ -30,7 +30,7 @@ struct Layout: View {
             }
             Spacer()
             AppTabs(currentTab: $currentTab)
-        }
+        }.background(.appBackground)
         .navigationBarBackButtonHidden(true)
     }
 }

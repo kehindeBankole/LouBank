@@ -37,6 +37,13 @@
 		7B4F10C92C1CE64600BA83C4 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4F10C72C1CE64600BA83C4 /* Layout.swift */; };
 		7B4F10CA2C1CE64600BA83C4 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4F10C72C1CE64600BA83C4 /* Layout.swift */; };
 		7B67D5142C13AE420006852C /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B67D5132C13AE420006852C /* AppButton.swift */; };
+		7BC758C72C39783F002E50C5 /* VisaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC758C62C39783E002E50C5 /* VisaCard.swift */; };
+		7BC758C82C39783F002E50C5 /* VisaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC758C62C39783E002E50C5 /* VisaCard.swift */; };
+		7BC758C92C39783F002E50C5 /* VisaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC758C62C39783E002E50C5 /* VisaCard.swift */; };
+		7BC758CB2C39C5B5002E50C5 /* FinaceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC758CA2C39C5B5002E50C5 /* FinaceCard.swift */; };
+		7BC758CC2C39C5B5002E50C5 /* FinaceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC758CA2C39C5B5002E50C5 /* FinaceCard.swift */; };
+		7BC758CD2C39C5B5002E50C5 /* FinaceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC758CA2C39C5B5002E50C5 /* FinaceCard.swift */; };
+		7BDC08DF2C305EF50042D66A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDC08DE2C305EF50042D66A /* Color.swift */; };
 		7BF6356F2C14796B002AD569 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF6356E2C14796B002AD569 /* CustomButtonStyle.swift */; };
 		7BF635712C148146002AD569 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF635702C148146002AD569 /* Font.swift */; };
 		7BF635A12C14924C002AD569 /* SansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BF6359E2C14924C002AD569 /* SansRegular.ttf */; };
@@ -84,6 +91,9 @@
 		7B4F10C32C1CE62900BA83C4 /* AppTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabs.swift; sourceTree = "<group>"; };
 		7B4F10C72C1CE64600BA83C4 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		7B67D5132C13AE420006852C /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		7BC758C62C39783E002E50C5 /* VisaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisaCard.swift; sourceTree = "<group>"; };
+		7BC758CA2C39C5B5002E50C5 /* FinaceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinaceCard.swift; sourceTree = "<group>"; };
+		7BDC08DE2C305EF50042D66A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		7BF6356E2C14796B002AD569 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		7BF635702C148146002AD569 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		7BF6359E2C14924C002AD569 /* SansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SansRegular.ttf; sourceTree = "<group>"; };
@@ -206,6 +216,7 @@
 			children = (
 				7B377B8F2C1108FE00B48BB6 /* Gradient.swift */,
 				7BF635702C148146002AD569 /* Font.swift */,
+				7BDC08DE2C305EF50042D66A /* Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -246,6 +257,8 @@
 			isa = PBXGroup;
 			children = (
 				7B4F10BF2C1CE61000BA83C4 /* Home.swift */,
+				7BC758C62C39783E002E50C5 /* VisaCard.swift */,
+				7BC758CA2C39C5B5002E50C5 /* FinaceCard.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -417,8 +430,11 @@
 				7B1415E92C10EF430075D1C5 /* ContentView.swift in Sources */,
 				7B1415E72C10EF430075D1C5 /* LouBankApp.swift in Sources */,
 				7B45F2C32C1F487B0093076E /* Shop.swift in Sources */,
+				7BC758C72C39783F002E50C5 /* VisaCard.swift in Sources */,
 				7B4F10C02C1CE61000BA83C4 /* Home.swift in Sources */,
 				7BF635712C148146002AD569 /* Font.swift in Sources */,
+				7BC758CB2C39C5B5002E50C5 /* FinaceCard.swift in Sources */,
+				7BDC08DF2C305EF50042D66A /* Color.swift in Sources */,
 				7B377B902C1108FE00B48BB6 /* Gradient.swift in Sources */,
 				7B45F2C82C1F64D70093076E /* Card.swift in Sources */,
 				7B4F10C82C1CE64600BA83C4 /* Layout.swift in Sources */,
@@ -433,10 +449,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B4F10C52C1CE62900BA83C4 /* AppTabs.swift in Sources */,
+				7BC758CC2C39C5B5002E50C5 /* FinaceCard.swift in Sources */,
 				7B45F2C92C1F64D70093076E /* Card.swift in Sources */,
 				7B45F2D32C1F654A0093076E /* History.swift in Sources */,
 				7B45F2CE2C1F65240093076E /* Chat.swift in Sources */,
 				7B4F10C92C1CE64600BA83C4 /* Layout.swift in Sources */,
+				7BC758C82C39783F002E50C5 /* VisaCard.swift in Sources */,
 				7B4F10C12C1CE61000BA83C4 /* Home.swift in Sources */,
 				7B45F2C42C1F487B0093076E /* Shop.swift in Sources */,
 				7B1415F92C10EF450075D1C5 /* LouBankTests.swift in Sources */,
@@ -453,6 +471,8 @@
 				7B45F2CA2C1F64D70093076E /* Card.swift in Sources */,
 				7B4F10CA2C1CE64600BA83C4 /* Layout.swift in Sources */,
 				7B45F2C52C1F487B0093076E /* Shop.swift in Sources */,
+				7BC758C92C39783F002E50C5 /* VisaCard.swift in Sources */,
+				7BC758CD2C39C5B5002E50C5 /* FinaceCard.swift in Sources */,
 				7B45F2CF2C1F65240093076E /* Chat.swift in Sources */,
 				7B1416052C10EF450075D1C5 /* LouBankUITestsLaunchTests.swift in Sources */,
 				7B4F10C62C1CE62900BA83C4 /* AppTabs.swift in Sources */,
